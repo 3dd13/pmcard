@@ -1,0 +1,88 @@
+<!-- Jumbotron -->
+<div class="jumbotron">
+  <div class="container">
+    <h1>Hello, world!</h1>
+    <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+    <b><%= link_to 'Check our products', store_index_path, class: "btn btn-sm btn-primary btn-check" %></b>
+  </div>
+</div>
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing">
+  <h1> New Arrival </h1>
+  <hr>
+<!-- Three columns of text below the carousel -->
+<div class="row img3">
+
+  <div class="col-lg-4">
+    <img class="img-circle" src="images/Christmas_Card.jpg"/>
+    <h2><%= @card_1.title %></h2>
+    <p><%= @card_1.description %></p>
+    <p><%= @card_1.card_designer %></p>
+    <p><%= @card_1.price %></p>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div><!-- /.col-lg-4 -->
+  
+  <div class="col-lg-4">
+    <img class="img-circle" src="images/Christmas_Card_1.jpg"/>
+    <h2><%= @card_2.title %></h2>
+    <p><%= @card_2.description %></p>
+    <p><%= @card_2.price %></p>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div>
+
+  <div class="col-lg-4">
+    <img class="img-circle" src="images/Birthday_Card.jpg"/>
+    <h2><%= @card_3.title %></h2>
+    <p><%= @card_3.description %></p>
+    <p><%= @card_3.price %></p>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div>
+
+</div><!-- /.row -->
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+  </div>
+  <div class="col-md-5">
+    <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-5">
+    <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+  </div>
+  <div class="col-md-7">
+    <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div class="col-md-7">
+    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+  </div>
+  <div class="col-md-5">
+    <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<!-- /END THE FEATURETTES -->

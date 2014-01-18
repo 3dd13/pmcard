@@ -1,0 +1,15 @@
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+<h1>Our Catalog</h1>
+  <% @cards.each do |card| %>
+    <div class="entry">
+      <%= image_tag(card.image_url) %>
+      <h3><%= card.title %></h3>
+      <p><%= sanitize(card.description) %></p>
+      <p><%= card.card_designer %> </p>
+      <div class="price_line">
+        <span class="price"><%= card.price %></span>
+      </div>
+    </div>
+  <% end %>
