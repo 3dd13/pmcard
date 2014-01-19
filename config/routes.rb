@@ -1,5 +1,8 @@
 Pmcards::Application.routes.draw do
   get "store/index"
+  get "/about" => "home#about", as: :about
+  get "/designers" => "home#designer", as: :designer
+  get "/contact" => "home#contact", as: :contact
   resources :cards
 
   devise_for :admins
