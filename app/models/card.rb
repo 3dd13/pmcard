@@ -6,6 +6,7 @@ class Card < ActiveRecord::Base
             with: %r{\.(gif|jpg|png)\Z}i,
             message: 'must be a URL for GIF, JPG or PNG image.'
             }
+  validate :card_designer, presence: true
 
   belongs_to :admin
 end

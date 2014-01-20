@@ -19,7 +19,7 @@
 <div class="row">
   <% @card.each do |card| %>
   <div class="col-lg-4">
-    <%= image_tag(card.image_url) %>>
+    <%= image_tag(card.image_url) %>
     <h2><%= card.title %></h2>
     <p><%= truncate(strip_tags(card.description), length: 80) %></p>
     <p><%= card.card_designer %></p>

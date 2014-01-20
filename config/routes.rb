@@ -1,7 +1,9 @@
 Pmcards::Application.routes.draw do
+  get "/designers" => "designers#index", as: :designer_index
+  get "designers/:designer_name" => "designers#show", as: :designer_profile
   get "store/index"
   get "/about" => "home#about", as: :about
-  get "/designers" => "home#designer", as: :designer
+  # get "/designers" => "home#designer", as: :designer
   get "/contact" => "home#contact", as: :contact
   resources :cards
 

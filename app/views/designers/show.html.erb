@@ -1,0 +1,14 @@
+<h1>Designer <%= params[:designer_name] %></h1>
+<div class="row">     
+  <% @designer_cards.each do |card| %>
+  <div class="col-6 col-sm-6 col-lg-4 text-center">
+    <%= image_tag(card.image_url) %>
+    <h2><%= card.title %></h2>
+    <p><%= truncate(strip_tags(card.description), length: 80) %></p>
+    <p><%= card.card_designer %></p>
+    <p><%= card.price %></p>
+    <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+  </div>
+    <% end %>   
+</div>
+
