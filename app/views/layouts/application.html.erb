@@ -30,6 +30,15 @@
                 <% if current_admin %>
                   <li><%= link_to "Admin Sign Out", destroy_admin_session_path, method: :delete %></li>
                 <% elsif current_user %>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> My SophLove <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#"> My Orders </a></li>
+                        <li><a href="#"> My Favourites </a></li>
+                        <li><%= link_to "My Shopping Cart", shopping_cart_items_path %></li>
+                      </ul>
+                    </a>
+                  </li>
                   <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
                 <% else %>
                   <li class="dropdown">

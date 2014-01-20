@@ -1,4 +1,6 @@
 Pmcards::Application.routes.draw do
+  resources :shopping_cart_items
+
   get "/designers" => "designers#index", as: :designer_index
   get "designers/:designer_name" => "designers#show", as: :designer_profile
   get "store/index"
